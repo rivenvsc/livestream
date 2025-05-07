@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Image from 'next/image';
 import { PlayCircle, Users, MessageSquare, Share2, ThumbsUp, Settings } from 'lucide-react';
@@ -20,7 +20,7 @@ const getStreamDetails = async (id: string) => {
 
 
 export default async function LiveStreamPage({ params }: { params: { id: string } }) {
-  const stream = await getStreamDetails(params.id);
+  const stream = await getStreamDetails(params?.id);
 
   if (!stream) {
     return <div className="text-center py-12">Stream not found.</div>;

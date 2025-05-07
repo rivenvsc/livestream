@@ -1,4 +1,4 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { CalendarDays, Clock, Tv, Filter, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
@@ -9,6 +9,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import Image from 'next/image';
 
 // Mock data - replace with actual data fetching
 const scheduleEvents = [
@@ -84,7 +85,13 @@ export default function SchedulePage() {
               <Card key={event.id} className="overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
                 {event.image && (
                   <div className="relative h-40 w-full">
-                     <Image src={event.image} alt={event.title} layout="fill" objectFit="cover" data-ai-hint={event.dataAiHint} />
+                     <Image
+                          src={event.image} 
+                          alt={event.title} 
+                          layout="fill" 
+                          objectFit="cover" 
+                          data-ai-hint={event.dataAiHint} 
+                    />
                   </div>
                 )}
                 <CardHeader>

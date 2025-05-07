@@ -4,27 +4,32 @@ import { Home, Clapperboard, CalendarDays, Info, Facebook, Send, MessageSquare, 
 export const SITE_NAME = 'StreamVerse';
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: 'Home', href: '/', icon: Home },
-  { label: 'Live Streams', href: '/live-streams', icon: Clapperboard },
-  { label: 'Schedule', href: '/schedule', icon: CalendarDays },
-  { label: 'Information', href: '/information', icon: Info },
+  { label: 'Trang chủ', href: '/', icon: Home },
+  { label: 'Trực tiếp', href: '/live-streams', icon: Clapperboard },
+  { label: 'Lịch thi đấu', href: '/schedule', icon: CalendarDays },
+  { label: 'Thông tin', href: '/information', icon: Info },
 ];
 
 export const APP_DOWNLOAD_LINKS = [
-  { label: 'iOS App', href: '#', icon: Apple, 'aria-label': 'Download iOS App' },
-  { label: 'Android App', href: '#', icon: Smartphone, 'aria-label': 'Download Android App' },
+  { label: 'IOS', href: '#', icon: Apple, 'aria-label': 'Download iOS App' },
+  { label: 'Android', href: '#', icon: Smartphone, 'aria-label': 'Download Android App' },
 ];
 
 export const FOOTER_INFO_LINKS: NavItem[] = [
-  { label: 'Schedule', href: '/schedule' },
-  { label: 'Results', href: '/results' }, // Placeholder, create page if needed
-  { label: 'Standings', href: '/standings' }, // Placeholder, create page if needed
+  { label: 'Nhà cái uy tín 2025', href: '/#' },
+  { label: 'Tỷ lệ kèo nhà cái', href: '/#' },
+  { label: 'Lịch thi đấu bóng đá', href: '/#' },
+  { label: 'Kết quả bóng đá mới', href: '/#' },
+  { label: 'Bảng xếp hạng', href: '/#' },
+  { label: 'Livescore: Tỷ số trực tiếp', href: '/#' },
 ];
 
 export const FOOTER_LEGAL_LINKS: NavItem[] = [
-  { label: 'Policies', href: '/policies' },
-  { label: 'Terms of Service', href: '/terms' },
-  { label: 'Contact Us', href: '/contact' },
+  { label: 'Chính sách', href: '/policies' },
+  { label: 'Điều khoản', href: '/terms' },
+  { label: 'Liên hệ', href: '/contact' },
+  { label: 'Soi kèo', href: '/#' },
+  { label: 'Vua sân cỏ', href: '/#' },
 ];
 
 export const SOCIAL_LINKS: SocialLink[] = [

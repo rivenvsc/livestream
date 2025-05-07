@@ -7,6 +7,7 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { Toaster } from "@/components/ui/toaster";
 import { SITE_NAME } from '@/config/site';
+import Navbar from '@/components/layout/Navbar';
 
 
 export const metadata: Metadata = {
@@ -27,7 +28,8 @@ export default function RootLayout({
       <body className={`${GeistSans.variable} ${GeistMono.variable} antialiased min-h-screen flex flex-col`}>
         <ThemeProvider>
           <Header />
-          <main className="flex-grow container py-8">
+          <main className="flex-grow container py-8 mx-auto px-4 md:px-8 lg:px-12">
+            <Navbar />
             {children}
           </main>
           <Footer />
